@@ -1,11 +1,10 @@
+import { useState } from 'react';
 import Login from './components/login';
+import Search from './components/search';
 
 function App() {
-  return (
-    <div>
-      <Login />
-    </div>
-  );
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  return !isAuthenticated ? <Login setIsAuthenticated={setIsAuthenticated} /> : <Search />;
 }
 
 export default App;
