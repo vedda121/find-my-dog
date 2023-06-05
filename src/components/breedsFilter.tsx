@@ -20,8 +20,8 @@ function BreedsFilter({ breeds, handleBreedsFilter }: BreedsFilterProps) {
   }, []);
 
   return (
-    <>
-      <label className="mb-2 block text-sm font-medium text-gray-900">
+    <div>
+      <label className="mb-1 block text-sm font-medium text-gray-900">
         Select breeds to filter
       </label>
       <Select
@@ -32,7 +32,7 @@ function BreedsFilter({ breeds, handleBreedsFilter }: BreedsFilterProps) {
         onChange={handleBreedsFilter}
         options={options}
       />
-    </>
+    </div>
   );
 }
 

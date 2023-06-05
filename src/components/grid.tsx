@@ -1,10 +1,10 @@
-import { Dog, Favorites } from '../models/models';
+import { Dog } from '../models/models';
 import DogCard from './dogCard';
 
 interface GridProps {
   dogs: Dog[];
-  favorites: Favorites[];
-  setFavorites: React.Dispatch<React.SetStateAction<Favorites[]>>;
+  favorites: string[];
+  setFavorites: React.Dispatch<React.SetStateAction<string[]>>;
 }
 function Grid({ dogs, favorites, setFavorites }: GridProps) {
   return (

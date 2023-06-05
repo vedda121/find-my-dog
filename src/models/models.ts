@@ -11,7 +11,3 @@ export interface Dog {
   zip_code: string;
   breed: string;
 }
-
-export interface Favorites {
-  id: string;
-}

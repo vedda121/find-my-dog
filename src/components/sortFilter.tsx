@@ -5,10 +5,10 @@ interface SortFilterProps {
 
 function SortFilter({ sort, setSort }: SortFilterProps) {
   return (
-    <>
+    <div>
       <label
         htmlFor="sort_filter"
-        className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+        className="mb-1 block text-sm font-medium text-gray-900 dark:text-white"
       >
         Select sort filter
       </label>
@@ -20,13 +20,12 @@ function SortFilter({ sort, setSort }: SortFilterProps) {
           setSort(e.target.value);
         }}
       >
-        <option value=""> </option>
         <option value="breed:asc"> Breed Ascending</option>
         <option value="breed:desc">Breed Descending</option>
         <option value="age:asc">Age Ascending</option>
         <option value="age:desc">Age Descending</option>
       </select>
-    </>
+    </div>
   );
 }
 
