@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/find-my-dog/static/css/main.e0023243.css",
-    "main.js": "/find-my-dog/static/js/main.b7a82d9e.js",
+    "main.js": "/find-my-dog/static/js/main.90a0a9e9.js",
     "index.html": "/find-my-dog/index.html",
     "main.e0023243.css.map": "/find-my-dog/static/css/main.e0023243.css.map",
-    "main.b7a82d9e.js.map": "/find-my-dog/static/js/main.b7a82d9e.js.map"
+    "main.90a0a9e9.js.map": "/find-my-dog/static/js/main.90a0a9e9.js.map"
   },
   "entrypoints": [
     "static/css/main.e0023243.css",
-    "static/js/main.b7a82d9e.js"
+    "static/js/main.90a0a9e9.js"
   ]
 }
