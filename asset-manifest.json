@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/find-my-dog/static/css/main.e0023243.css",
+    "main.js": "/find-my-dog/static/js/main.b7a82d9e.js",
+    "index.html": "/find-my-dog/index.html",
+    "main.e0023243.css.map": "/find-my-dog/static/css/main.e0023243.css.map",
+    "main.b7a82d9e.js.map": "/find-my-dog/static/js/main.b7a82d9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0023243.css",
+    "static/js/main.b7a82d9e.js"
+  ]
+}
