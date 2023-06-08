@@ -5,12 +5,14 @@ import { UserDetails } from '../models/models';
 interface LoginProps {
   setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
 function Login({ setIsAuthenticated }: LoginProps) {
   const [userDetails, setUserDetails] = useState<UserDetails>({ name: '', email: '' });
+
   const handleSignIn: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     const { status, data } = await axios.post(
-      'https://frontend-take-home-service.fetch.com/auth/login',
+      `${process.env.REACT_APP_API_PATH}/auth/login`,
       {
         name: userDetails.name,
         email: userDetails.email,
@@ -35,7 +37,7 @@ function Login({ setIsAuthenticated }: LoginProps) {
                 type="name"
                 name="name"
                 id="name"
-                className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 sm:text-sm "
+                className="block w-full rounded border border-gray-300 bg-white p-2.5 text-sm text-gray-500 shadow-sm duration-300 hover:border-gray-400 focus:outline-none focus:ring focus:ring-[#69516d]"
                 placeholder="Alice Smith"
                 onChange={(e) => setUserDetails({ ...userDetails, name: e.target.value })}
                 required
@@ -50,14 +52,14 @@ function Login({ setIsAuthenticated }: LoginProps) {
                 name="email"
                 id="email"
                 placeholder="xyz@xyz.com"
-                className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 sm:text-sm"
+                className="block w-full rounded border border-gray-300 bg-white p-2.5 text-sm text-gray-500 shadow-sm duration-300 hover:border-gray-400 focus:outline-none focus:ring focus:ring-[#69516d]"
                 onChange={(e) => setUserDetails({ ...userDetails, email: e.target.value })}
                 required
               />
             </div>
             <button
               type="submit"
-              className="w-full rounded-lg bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-700 focus:ring-4"
+              className="w-full rounded-md bg-[#300d38] px-5 py-2.5 text-center text-sm font-bold text-white hover:bg-[#890075]"
             >
               Sign in
             </button>

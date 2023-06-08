@@ -1,0 +1,28 @@
+#side_bar > div > div > div,
+#side_bar > div > div > input {
+  transform: none !important;
+  translate: none !important;
+  transition: none !important;
+}
+.side_bg > div {
+  background-color: #f9f7f2;
+}
+
+.min-caption,
+.max-caption {
+  background-color: #97869b !important;
+}
+
+.pagination button {
+  color: #300d38;
+}
+
+.pagination button:hover {
+  background-color: #98769f !important;
+  color: white;
+}
+
+.pagination li[aria-current] button {
+  background-color: #300d38 !important;
+  color: white;
+}

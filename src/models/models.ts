@@ -1,8 +1,3 @@
-export interface UserDetails {
-  name: string;
-  email: string;
-}
-
 export interface Dog {
   id: string;
   img: string;
@@ -10,4 +5,18 @@ export interface Dog {
   age: number;
   zip_code: string;
   breed: string;
+}
+
+export interface Location {
+  zip_code: string;
+  latitude: number;
+  longitude: number;
+  city: string;
+  state: string;
+  county: string;
+}
+
+export interface UserDetails {
+  name: string;
+  email: string;
 }
