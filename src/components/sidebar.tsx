@@ -53,8 +53,8 @@ function SideBar({
           <CityFilter city={city} handleCityFilter={handleCityFilter} setCity={setCity} />
           <AgeFilter ageMax={ageMax} ageMin={ageMin} setAgeMax={setAgeMax} setAgeMin={setAgeMin} />
           <div className="mt-[-10px] flex justify-between text-sm font-medium text-gray-900">
-            <div>Min Age: {ageMin}</div>
-            <div>Max Age: {ageMax}</div>
+            <div>Min Age: {ageMin || 0}</div>
+            <div>Max Age: {ageMax || 25}</div>
           </div>
         </div>
         <button
